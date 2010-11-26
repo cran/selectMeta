@@ -30,7 +30,7 @@ DearBeggToMinimize(vec, y, u, lam, teststat)
   \item{CR}{Parameter that is given to \code{DEoptim}. See the help file of the function \code{DEoptim.control} for details.}
   \item{NP}{Parameter that is given to \code{DEoptim}. See the help file of the function \code{DEoptim.control} for details.}
   \item{w}{Weight function, parametrized as vector of length \eqn{1 + \lfloor(n / 2)\rfloor} where \eqn{n} is the number of studies, i.e. the length of \eqn{y}.}
-  \item{theta}{Effet size estimate.}
+  \item{theta}{Effect size estimate.}
   \item{sigma}{Random effects variance component.}
   \item{hij}{Integral of density over a constant piece of \eqn{w}. See Rufibach (2010, Appendix) for details.}
   \item{vec}{Vector of parameters over which we maximize.}
@@ -40,7 +40,9 @@ DearBeggToMinimize(vec, y, u, lam, teststat)
 \item{\code{w}}{Vector of estimated weights.}
 \item{\code{theta}}{Estimate of the combined effect in the Dear and Begg model.}
 \item{\code{sigma}}{Estimate of the random effects component variance.}
-\item{p}{\eqn{p}-values computed from the inputed test statistics.}
+\item{p}{\eqn{p}-values computed from the inputed test statistics, ordered in decreasing order.}
+\item{y}{Effect sizes, ordered in decreasing order of \eqn{p}-values.}
+\item{u}{Standard errors, ordered in decreasing order of \eqn{p}-values.}
 \item{loglik}{Value of the log-likelihood at the maximum.}
 \item{DEoptim.res}{Only available in \code{\link{DearBeggMonotone}}. Provides the object that is outputted by \code{\link{DEoptim}}.}
 }
@@ -115,9 +117,14 @@ weightLine(p, w = res3$w, col0 = 3, lwd0 = 3, lty0 = 2)
 weightLine(p, w = res4$w, col0 = 6, lwd0 = 2, lty0 = 1)  
 
 legend("topright", c(expression("Iyengar & Greenhouse (1988) w"[1]), 
-    expression("Iyengar & Greenhouse (1998) w"[2]), "Dear and Begg (1992)", 
+    expression("Iyengar & Greenhouse (1988) w"[2]), "Dear and Begg (1992)", 
     "Rufibach (2010)"), col = c(2, 4, 3, 6), lty = c(1, 1, 2, 1), 
     lwd = c(3, 3, 3, 2), bty = "n")
+
+## compute selection bias
+eta <- sqrt(res4$sigma ^ 2 + res4$u ^ 2)
+bias <- effectBias(res4$y, res4$u, res4$w, res4$theta, eta)
+bias
 
 
 ##------------------------------------------
@@ -142,6 +149,11 @@ weightLine(rev(sort(res3$p)), w = res3$w, col0 = 4, lwd0 = 2, lty0 = 1)
 
 legend("bottomright", c("Dear and Begg (1992)", "Rufibach (2010)"), col = 
     c(2, 4), lty = c(2, 1), lwd = c(3, 2), bty = "n")
+    
+## compute selection bias
+eta <- sqrt(res3$sigma ^ 2 + res3$u ^ 2)
+bias <- effectBias(res3$y, res3$u, res3$w, res3$theta, eta)
+bias  
 }
 }
 \keyword{nonparametric}

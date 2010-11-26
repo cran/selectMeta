@@ -1,0 +1,10 @@
+logcondens_1.0.1:
+---------------------------------
+- Suppress warnings in normalizeT() and IyenGreenLoglikT()
+- Added function 'effectBias()'
+
+
+logcondens_1.0 (initial version, 15.11.2010):
+---------------------------------
+- Initial version uploaded to CRAN
+

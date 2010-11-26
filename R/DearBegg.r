@@ -77,10 +77,10 @@ while ((iter <= maxiter) & (delta > tolerance)){
 
     delta <- max(sqrt(sum((w_old - c(w, theta, sigma)) ^ 2)), abs(LL_old - d2$objective))
     
-    if (trace == TRUE){print(paste("run: ", iter, " / LL = ", disp(d2$objective, 6), " / delta = ", disp(delta, 1, 1), sep = ""))}
+    if (trace == TRUE){print(paste("run: ", iter, " / LL = ", format(d2$objective, digits = 6, nsmall = 6, scientific = FALSE), " / delta = ", format(delta, digits = 1, scientific = FALSE), sep = ""))}
     iter <- iter + 1
 }
 
-res <- list("w" = w, "theta" = theta, "sigma" = sigma, "p" = p0, "loglik" = max(LLs, na.rm = TRUE))
+res <- list("w" = w, "theta" = theta, "sigma" = sigma, "p" = p, "y" = y, "u" = u, "loglik" = max(LLs, na.rm = TRUE))
 return(res)
 }

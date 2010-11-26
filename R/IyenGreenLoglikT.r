@@ -12,6 +12,6 @@ IyenGreenLoglikT <- function(para, t, q, N, type = 1){
         int <- int + log(tmp)
         }
 
-    loglik <- sum(dt(t, ncp = sqrt(N / 2) * theta, df = q, log = TRUE)) + iG - int
+    loglik <- suppressWarnings(sum(dt(t, ncp = sqrt(N / 2) * theta, df = q, log = TRUE)) + iG - int)
     return(loglik)
 }

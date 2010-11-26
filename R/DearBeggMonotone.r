@@ -32,6 +32,6 @@ sigma <- as.numeric(d0$optim$bestmem)[k + 2]
 hij <- Hij(theta, sigma, y, u, teststat)$Hij  
 ll.DE <- DearBeggLoglik(w, theta, sigma, y, u, hij, lam)$LL
 
-res <- list("w" = w, "theta" = theta, "sigma" = sigma, "p" = p0, "loglik" = ll.DE, "DEoptim.res" = d0)
+res <- list("w" = w, "theta" = theta, "sigma" = sigma, "p" = p, "y" = y, "u" = u, "loglik" = ll.DE, "DEoptim.res" = d0)
 return(res)
 }
