@@ -45,5 +45,5 @@ effectBias <- function(y, u, w, theta, eta){
     dat <- round(cbind(y, u, p, bias, y - bias, bias / y), 4)
     colnames(dat) <- c("y", "u", "p", "bias", "y - bias", "bias / y")
     
-    return(list("bias" = bias, "mean.bias" = mean(bias), "dat" = dat))
+    return(list("dat" = dat))
 }

@@ -24,7 +24,7 @@ for (i in 1:nrow(inipop)){inipop[i, ] <- c(sort(inipop[i, 1:k]), runif(1, -20, 2
 
 d0 <- DEoptim(fn = DearBeggToMinimize, lower = c(rep(0, k), -20, 0), upper = c(rep(1, k), 20, 50), 
     control = DEoptim.control(strategy = 2, bs = FALSE, NP = size, trace = trace, itermax = maxiter, CR = CR, F = 0.8, 
-    initialpop = inipop), y, u, lam, teststat) 
+    initialpop = inipop), y, u, lam) 
 
 w <- as.numeric(d0$optim$bestmem)[1:k] 
 theta <- as.numeric(d0$optim$bestmem)[k + 1] 

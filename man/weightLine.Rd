@@ -19,7 +19,7 @@ Dear, K.B.G. and Begg, C.B. (1992).
 An Approach for Assessing Publication Bias Prior to Performing a Meta-Analysis.
 \emph{Statist. Sci.}, \bold{7(2)}, 237--245.
 
-Rufibach, K. (2010).
+Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
 Preprint.
 }

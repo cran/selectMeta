@@ -13,7 +13,7 @@ has the form
 
 \deqn{f(p; \theta, \sigma, \eta) = \frac{\sigma}{2 \eta} \frac{\phi\Bigl((-\sigma \Phi^{-1}(p / 2) - \theta) / \eta\Bigr) + \phi\Bigl((\sigma \Phi^{-1}(p / 2) - \theta) / \eta\Bigr)}{\phi(\Phi^{-1}(p / 2))}}
 
-where \eqn{\eta^2 = u^2 + \sigma^2}. We refer to Rufibach (2010) for details.
+where \eqn{\eta^2 = u^2 + \sigma^2}. We refer to Rufibach (2011) for details.
 }
 \usage{
 dPval(p, u, theta, sigma2)
@@ -37,7 +37,7 @@ Dear, K.B.G. and Begg, C.B. (1992).
 An Approach for Assessing Publication Bias Prior to Performing a Meta-Analysis.
 \emph{Statist. Sci.}, \bold{7(2)}, 237--245.
 
-Rufibach, K. (2010).
+Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
 Preprint.
 }

@@ -8,7 +8,7 @@
 \description{In Dear and Begg (1992) it was proposed to nonparametrically estimate via maximum likelihood the weight function \eqn{w} in a selection model via
 pooling \eqn{p}-values in groups of 2 and assuming a piecewise constant \eqn{w}. The function \code{\link{DearBegg}} implements estimation of \eqn{w} via 
 a coordinate-wise Newton-Raphson algorithm as described in Dear and Begg (1992). In addition, the function \code{\link{DearBeggMonotone}} enables computation of the 
-weight function in the same model under the constraint that it is non-increasing, see Rufibach (2010). To this end we use the differential evolution algorithm
+weight function in the same model under the constraint that it is non-increasing, see Rufibach (2011). To this end we use the differential evolution algorithm
 described in Ardia et al (2010a, b) and implemented in Mullen et al (2009).
 The functions \code{\link{Hij}}, \code{\link{DearBeggLoglik}}, and \code{\link{DearBeggToMinimize}} are not intended to be called by the user.}
 \usage{
@@ -18,7 +18,7 @@ DearBeggMonotone(y, u, lam = 2, maxiter = 1000, CR = 0.9,
     NP = NA, trace = TRUE)
 Hij(theta, sigma, y, u, teststat)
 DearBeggLoglik(w, theta, sigma, y, u, hij, lam)
-DearBeggToMinimize(vec, y, u, lam, teststat)
+DearBeggToMinimize(vec, y, u, lam)
 }
 \arguments{
   \item{y}{Normally distributed effect sizes.}
@@ -32,7 +32,7 @@ DearBeggToMinimize(vec, y, u, lam, teststat)
   \item{w}{Weight function, parametrized as vector of length \eqn{1 + \lfloor(n / 2)\rfloor} where \eqn{n} is the number of studies, i.e. the length of \eqn{y}.}
   \item{theta}{Effect size estimate.}
   \item{sigma}{Random effects variance component.}
-  \item{hij}{Integral of density over a constant piece of \eqn{w}. See Rufibach (2010, Appendix) for details.}
+  \item{hij}{Integral of density over a constant piece of \eqn{w}. See Rufibach (2011, Appendix) for details.}
   \item{vec}{Vector of parameters over which we maximize.}
   \item{teststat}{Vector of test statistics, equals \eqn{|y| / u}.}
   }
@@ -60,7 +60,7 @@ An Approach for Assessing Publication Bias Prior to Performing a Meta-Analysis.
 Mullen, K.M., Ardia, D., Gil, D.L., Windover, D., Cline, J. (2009).
 'DEoptim': An 'R' Package for Global Optimization by Differential Evolution. 
 
-Rufibach, K. (2010).
+Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
 Preprint.
 }
@@ -100,7 +100,7 @@ res2 <- IyenGreenMLE(t, q, N, type = 2)
 ## weight function from Dear & Begg (1992)
 res3 <- DearBegg(y, u, lam = lam1)
 
-## monotone version of Dear & Begg, as introduced in Rufibach (2010)
+## monotone version of Dear & Begg, as introduced in Rufibach (2011)
 set.seed(1977)
 res4 <- DearBeggMonotone(y, u, lam = lam1, maxiter = 1000, CR = 1)
 
@@ -118,7 +118,7 @@ weightLine(p, w = res4$w, col0 = 6, lwd0 = 2, lty0 = 1)
 
 legend("topright", c(expression("Iyengar & Greenhouse (1988) w"[1]), 
     expression("Iyengar & Greenhouse (1988) w"[2]), "Dear and Begg (1992)", 
-    "Rufibach (2010)"), col = c(2, 4, 3, 6), lty = c(1, 1, 2, 1), 
+    "Rufibach (2011)"), col = c(2, 4, 3, 6), lty = c(1, 1, 2, 1), 
     lwd = c(3, 3, 3, 2), bty = "n")
 
 ## compute selection bias
@@ -147,7 +147,7 @@ plot(0, 0, type = "n", xlim = c(0, 1), ylim = c(0, 1), pch = 19, col = 1,
 weightLine(rev(sort(res2$p)), w = res2$w, col0 = 2, lwd0 = 3, lty0 = 2)  
 weightLine(rev(sort(res3$p)), w = res3$w, col0 = 4, lwd0 = 2, lty0 = 1)  
 
-legend("bottomright", c("Dear and Begg (1992)", "Rufibach (2010)"), col = 
+legend("bottomright", c("Dear and Begg (1992)", "Rufibach (2011)"), col = 
     c(2, 4), lty = c(2, 1), lwd = c(3, 2), bty = "n")
     
 ## compute selection bias
