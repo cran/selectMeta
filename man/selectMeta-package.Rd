@@ -18,8 +18,9 @@ To maximize the log-likelihood function proposed by Dear & Begg (1992) under a m
 we use a differential evolution algorithm proposed by Ardia et al (2010a, b) and implemented in Mullen et al (2009).
 
 The main functions in this package are \code{\link{IyenGreen}} and \code{\link{DearBegg}}. 
-Using \code{\link{DearBeggMonotoneCItheta}} one can compute a profile likelihood confidence interval for the overall effect size \eqn{\theta}. 
-In addition, we provide two datasets: 
+Using \code{\link{DearBeggMonotoneCItheta}} one can compute a profile likelihood confidence interval for the overall effect size \eqn{\theta}
+and using \code{\link{DearBeggMonotonePvalSelection}} the simulation-based \eqn{p}-value to assess the null hypothesis of no selection, as
+described in Rufibach (2011, Section 6), can be computed. In addition, we provide two datasets: 
 \code{\link{education}}, a dataset frequently used in illustration of meta analysis and \code{\link{passive_smoking}}, a second dataset
 that has caused some controversy about whether publication bias is present in this dataset or not.
 }
@@ -28,8 +29,8 @@ that has caused some controversy about whether publication bias is present in th
 \tabular{ll}{
 Package: \tab selectMeta\cr
 Type: \tab Package\cr
-Version: \tab 1.0.2\cr
-Date: \tab 2011-02-18\cr
+Version: \tab 1.0.3\cr
+Date: \tab 2011-03-07\cr
 License: \tab GPL (>=2) \cr
 }
 }
@@ -60,7 +61,7 @@ Mullen, K.M., Ardia, D., Gil, D.L., Windover, D., Cline, J. (2009).
 
 Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
-Preprint.
+\emph{Biom. J.}, to appear.
 }
 \examples{
 # All functions in this package are illustrated 

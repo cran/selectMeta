@@ -1,15 +1,21 @@
-logcondens_1.0.2:
+selectMeta_1.0.3:
+---------------------------------
+- Added function 'DearBeggMonotonePvalSelection()'
+- Updated some references, especially Rufibach (2011)
+
+
+selectMeta_1.0.2:
 ---------------------------------
 - Added function 'DearBeggMonotoneCItheta()'
 
 
-logcondens_1.0.1:
+selectMeta_1.0.1:
 ---------------------------------
 - Suppress warnings in normalizeT() and IyenGreenLoglikT()
 - Added function 'effectBias()'
 
 
-logcondens_1.0 (initial version, 15.11.2010):
+selectMeta_1.0 (initial version, 15.11.2010):
 ---------------------------------
 - Initial version uploaded to CRAN
 

@@ -62,7 +62,7 @@ Mullen, K.M., Ardia, D., Gil, D.L., Windover, D., Cline, J. (2009).
 
 Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
-Preprint.
+\emph{Biom. J.}, to appear.
 }
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
@@ -128,6 +128,37 @@ bias
 
 
 ##------------------------------------------
+## Compute p-value to assess null hypothesis of no selection,
+## as described in Rufibach (2011, Section 6)
+## We use the package 'meta' to compute initial estimates for
+## theta and sigma
+##------------------------------------------
+library(meta)
+
+## compute null parameters
+meta.edu <- metagen(TE = y, seTE = u, sm = "MD", level = 0.95, 
+    comb.fixed = TRUE, comb.random = TRUE)
+theta0 <- meta.edu$TE.random
+sigma0 <- meta.edu$tau
+
+M <- 1000
+res <- DearBeggMonotonePvalSelection(y, u, theta0, sigma0, lam = lam1, 
+    M = M, maxiter = 1000)
+
+## plot all the computed monotone functions
+plot(0, 0, xlim = c(0, 1), ylim = c(0, 1), type = "n", xlab = "p-values", 
+    ylab = expression(w(p)))
+abline(v = 0.05, lty = 3)
+for (i in 1:M){weightLine(p, w = res$res.mono[1:k, i], col0 = grey(0.8), 
+    lwd0 = 1, lty0 = 1)}
+rug(p, lwd = 2)
+weightLine(p, w = res$mono0, col0 = 2, lwd0 = 1, lty0 = 1)  
+
+
+## =======================================================================
+
+
+##------------------------------------------
 ## Analysis second-hand tobacco smoke dataset
 ## Rothstein et al (2005), Publication Bias in Meta-Analysis, Appendix A
 ##------------------------------------------
@@ -154,6 +185,29 @@ legend("bottomright", c("Dear and Begg (1992)", "Rufibach (2011)"), col =
 eta <- sqrt(res3$sigma ^ 2 + res3$u ^ 2)
 bias <- effectBias(res3$y, res3$u, res3$w, res3$theta, eta)
 bias  
+
+
+##------------------------------------------
+## Compute p-value to assess null hypothesis of no selection
+##------------------------------------------
+## compute null parameters
+meta.toba <- metagen(TE = y, seTE = u, sm = "MD", level = 0.95, 
+    comb.fixed = TRUE, comb.random = TRUE)
+theta0 <- meta.toba$TE.random
+sigma0 <- meta.toba$tau
+
+M <- 1000
+res <- DearBeggMonotonePvalSelection(y, u, theta0, sigma0, lam = lam1, 
+    M = M, maxiter = 2000)
+
+## plot all the computed monotone functions
+plot(0, 0, xlim = c(0, 1), ylim = c(0, 1), type = "n", xlab = "p-values", 
+    ylab = expression(w(p)))
+abline(v = 0.05, lty = 3)
+for (i in 1:M){weightLine(p, w = res$res.mono[1:k, i], col0 = grey(0.8), 
+    lwd0 = 1, lty0 = 1)}
+rug(p, lwd = 2)
+weightLine(p, w = res$mono0, col0 = 2, lwd0 = 1, lty0 = 1)
 }
 }
 \keyword{nonparametric}

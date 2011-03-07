@@ -1,8 +1,8 @@
 Package: selectMeta
 Type: Package
 Title: Estimation of weight functions in meta analysis
-Version: 1.0.2
-Date: 2011-02-18
+Version: 1.0.3
+Date: 2011-03-07
 Author: Kaspar Rufibach <kaspar.rufibach@ifspm.uzh.ch>
 Maintainer: Kaspar Rufibach <kaspar.rufibach@ifspm.uzh.ch>
 Depends: DEoptim (>= 2.0-6)
@@ -23,9 +23,11 @@ Description: Publication bias, the fact that studies identified for
         algorithm proposed by Ardia et al (2010a, b) and implemented in
         Mullen et al (2009). In addition, we offer a method to compute
         a confidence interval for the overall effect size theta,
-        adjusted for selection bias.
+        adjusted for selection bias as well as a function that computes
+        the simulation-based p-value to assess the null hypothesis of
+        no selection as described in Rufibach (2011, Section 6).
 License: GPL (>= 2)
 URL: http://www.biostat.uzh.ch/aboutus/people/rufibach.html
-Packaged: 2011-02-22 07:10:13 UTC; rufibach
+Packaged: 2011-03-09 05:47:10 UTC; rufibach
 Repository: CRAN
-Date/Publication: 2011-02-22 09:00:24
+Date/Publication: 2011-03-09 14:25:31
