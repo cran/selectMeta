@@ -29,6 +29,6 @@ Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
 \emph{Biom. J.}, to appear.
 }
-\author{Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}}
+\author{Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}}
 \seealso{This function is illustrated in the help file for \code{\link{DearBegg}}.}
 \keyword{nonparametric}

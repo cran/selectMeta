@@ -1,3 +1,9 @@
+selectMeta_1.0.4:
+---------------------------------
+- Added NAMESPACE
+- Updated KRs contact details
+
+
 selectMeta_1.0.3:
 ---------------------------------
 - Added function 'DearBeggMonotonePvalSelection()'

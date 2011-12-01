@@ -1,0 +1,23 @@
+## which functions shall be accessible by the users?
+export(
+DearBegg,
+DearBeggLoglik,
+DearBeggMonotone,
+DearBeggMonotoneCItheta,
+DearBeggMonotonePvalSelection,
+DearBeggProfileLL,
+DearBeggToMinimize,
+DearBeggToMinimizeProfile,
+dPval,
+effectBias,
+Hij,
+IyenGreenLoglikT,
+IyenGreenMLE,
+IyenGreenWeight,
+normalizeT,
+pPool,
+pPval,
+qPval,
+rPval,
+weightLine
+)

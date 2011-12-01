@@ -18,7 +18,7 @@ Selection Models with Monotone Weight Functions in Meta-Analysis.
 \emph{Biom. J.}, to appear.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 }
 \seealso{This function is used in \code{\link{weightLine}}.}
 \examples{

@@ -44,7 +44,7 @@ Selection models and the file drawer problem (including rejoinder).
 \emph{Statist. Sci.}, \bold{3}, 109--135.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 }
 \seealso{For nonparametric estimation of weight functions see \code{\link{DearBegg}}.}
 \examples{

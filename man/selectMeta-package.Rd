@@ -29,13 +29,13 @@ that has caused some controversy about whether publication bias is present in th
 \tabular{ll}{
 Package: \tab selectMeta\cr
 Type: \tab Package\cr
-Version: \tab 1.0.3\cr
-Date: \tab 2011-03-07\cr
+Version: \tab 1.0.4\cr
+Date: \tab 2011-12-01\cr
 License: \tab GPL (>=2) \cr
 }
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 }
 \references{
 Ardia, D., Boudt, K., Carl, P., Mullen, K.M., Peterson, B.G. (2010).

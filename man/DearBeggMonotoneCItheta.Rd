@@ -43,7 +43,7 @@ Selection Models with Monotone Weight Functions in Meta-Analysis.
 \emph{Biom. J.}, to appear.
 }
 \author{
-Kaspar Rufibach (maintainer), \email{kaspar.rufibach@ifspm.uzh.ch}, \cr \url{http://www.biostat.uzh.ch/aboutus/people/rufibach.html}
+Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
 }
 \note{Since we have to numerically find zeros of a suitable function, via \code{\link{uniroot}}, to get the limits and each iteration involves
 computation of \eqn{w(\theta)} via a variant of \code{\link{DearBeggMonotone}}, computation of a confidence interval may take some time (typically seconds
