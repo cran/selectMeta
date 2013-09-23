@@ -29,8 +29,8 @@ that has caused some controversy about whether publication bias is present in th
 \tabular{ll}{
 Package: \tab selectMeta\cr
 Type: \tab Package\cr
-Version: \tab 1.0.4\cr
-Date: \tab 2011-12-01\cr
+Version: \tab 1.0.5\cr
+Date: \tab 2013-09-23\cr
 License: \tab GPL (>=2) \cr
 }
 }
@@ -61,7 +61,7 @@ Mullen, K.M., Ardia, D., Gil, D.L., Windover, D., Cline, J. (2009).
 
 Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
-\emph{Biom. J.}, to appear.
+\emph{Biom. J.}, \bold{53}(4), 689--704. 
 }
 \examples{
 # All functions in this package are illustrated 

@@ -20,7 +20,7 @@ where the rows are provided in decreasing order of \eqn{p}-values.}
 \references{
 Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
-\emph{Biom. J.}, to appear.
+\emph{Biom. J.}, \bold{53}(4), 689--704. 
 }
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}

@@ -1,7 +1,6 @@
 DearBeggMonotone <- function(y, u, lam = 2, maxiter = 1000, CR = 0.9, NP = NA, trace = TRUE){
 
 # lam: first weight (either 1 or 2, see Dear & Begg, p. 239. They recommend lam = 2.)
-require(DEoptim)
 
 # general parameters
 n <- length(y)

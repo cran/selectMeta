@@ -62,7 +62,7 @@ Mullen, K.M., Ardia, D., Gil, D.L., Windover, D., Cline, J. (2009).
 
 Rufibach, K. (2011).
 Selection Models with Monotone Weight Functions in Meta-Analysis.
-\emph{Biom. J.}, to appear.
+\emph{Biom. J.}, \bold{53}(4), 689--704. 
 }
 \author{
 Kaspar Rufibach (maintainer), \email{kaspar.rufibach@gmail.com}, \cr \url{http://www.kasparrufibach.ch}
