@@ -29,8 +29,8 @@ that has caused some controversy about whether publication bias is present in th
 \tabular{ll}{
 Package: \tab selectMeta\cr
 Type: \tab Package\cr
-Version: \tab 1.0.5\cr
-Date: \tab 2013-09-23\cr
+Version: \tab 1.0.6\cr
+Date: \tab 2014-02-06\cr
 License: \tab GPL (>=2) \cr
 }
 }

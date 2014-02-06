@@ -21,7 +21,7 @@ if (is.na(NP)){size <- 10 * (k + 2)} else {size <- NP}
 inipop <- matrix(runif(size * (k + 2)), ncol = k + 2, nrow = size, byrow = TRUE)
 for (i in 1:nrow(inipop)){inipop[i, ] <- c(sort(inipop[i, 1:k]), runif(1, -20, 20), runif(1, 0, 20))}
 
-d0 <- DEoptim(fn = DearBeggToMinimize, lower = c(rep(0, k), -20, 0), upper = c(rep(1, k), 20, 50), 
+d0 <- DEoptim::DEoptim(fn = DearBeggToMinimize, lower = c(rep(0, k), -20, 0), upper = c(rep(1, k), 20, 50), 
     control = DEoptim.control(strategy = 2, bs = FALSE, NP = size, trace = trace, itermax = maxiter, CR = CR, F = 0.8, 
     initialpop = inipop), y, u, lam) 
 

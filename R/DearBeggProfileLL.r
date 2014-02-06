@@ -13,7 +13,7 @@ DearBeggProfileLL <- function(z, res0, lam, conf.level = 0.95, maxiter = 500){
     inipop <- matrix(runif(size * (k + 1)), ncol = k + 1, nrow = size, byrow = TRUE)
     for (i in 1:nrow(inipop)){inipop[i, ] <- c(sort(inipop[i, 1:k]), runif(1, 0, 20))}
 
-    d0 <- DEoptim(fn = DearBeggToMinimizeProfile, lower = c(rep(0, k), 0), upper = c(rep(1, k), 50), 
+    d0 <- DEoptim::DEoptim(fn = DearBeggToMinimizeProfile, lower = c(rep(0, k), 0), upper = c(rep(1, k), 50), 
         control = DEoptim.control(strategy = 2, bs = FALSE, NP = size, trace = FALSE, itermax = maxiter, CR = 0.9, F = 0.8, 
         initialpop = inipop), z, y, u, lam) 
         

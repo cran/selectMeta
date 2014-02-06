@@ -21,3 +21,5 @@ qPval,
 rPval,
 weightLine
 )
+importFrom(DEoptim,
+            DEoptim)
