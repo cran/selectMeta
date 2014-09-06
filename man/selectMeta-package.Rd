@@ -2,7 +2,7 @@
 \alias{selectMeta-package}
 \alias{selectMeta}
 \docType{package}
-\title{Estimation of weight functions in meta analysis}
+\title{Estimation of Weight Functions in Meta Analysis}
 \description{
 Publication bias, the fact that studies identified for inclusion in a meta analysis do not represent
 all studies on the topic of interest, is commonly recognized as a threat to the validity of the results
@@ -29,8 +29,8 @@ that has caused some controversy about whether publication bias is present in th
 \tabular{ll}{
 Package: \tab selectMeta\cr
 Type: \tab Package\cr
-Version: \tab 1.0.6\cr
-Date: \tab 2014-02-06\cr
+Version: \tab 1.0.7\cr
+Date: \tab 2014-09-06\cr
 License: \tab GPL (>=2) \cr
 }
 }
