@@ -1,3 +1,7 @@
+selectMeta_1.0.8:
+---------------------------------
+- Properly import globals.
+
 selectMeta_1.0.6:
 ---------------------------------
 - Updated NAMESPACE.

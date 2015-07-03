@@ -16,7 +16,7 @@ for (i in 1:M){
     
     ## generate a sample of p-values according to the p-value density
     seed0 <- (i + 10) ^ 2    
-    rand <- for (r in 1:n){
+    for (r in 1:n){
         rand <- rPval(n = 1, u[r], theta0, sigma0 ^ 2, seed = seed0 + r)
         y_i[r] <- rand$yn
     }

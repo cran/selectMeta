@@ -21,4 +21,6 @@ qPval,
 rPval,
 weightLine
 )
+importFrom(graphics, segments)
+importFrom(stats, dnorm, dt, integrate, optim, optimize, pnorm, qchisq, qnorm, qt, runif, uniroot)
 importFrom(DEoptim, DEoptim, DEoptim.control)

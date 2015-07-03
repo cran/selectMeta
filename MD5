@@ -1,11 +1,11 @@
-10d24e01c701e1432b08c7cb6edbd02d *DESCRIPTION
-f3d750440cff8dc298867a4f43666013 *NAMESPACE
-cb99783583bd49349f427666f61b2b7c *NEWS
+cd623958d8e7ea717c2e62dde0704a08 *DESCRIPTION
+66c3ce7421e2dc38d947f871ad9c7623 *NAMESPACE
+e576d63114441222d5f28c2d9239229d *NEWS
 be9ec243b20ce88934577a6131244c47 *R/DearBegg.r
 5ae49ff5aedf3a75d1225835c3adaaf5 *R/DearBeggLoglik.r
 53c2cd82572e9a1c2f50fc1cd51d4226 *R/DearBeggMonotone.r
 c23539bc7077d715a9845b5a29d83c36 *R/DearBeggMonotoneCItheta.r
-e832f33a6170037205ae086b27a7af1a *R/DearBeggMonotonePvalSelection.r
+43acd5baec54ed6a2f4874654381e4fd *R/DearBeggMonotonePvalSelection.r
 320667d1feb2991f14c6dc2119918a49 *R/DearBeggProfileLL.r
 097ef23bbc7bc691fe3aa2e5ba84cb8d *R/DearBeggToMinimize.r
 9b1890bc3f33572705ba6e62c6a1b81c *R/DearBeggToMinimizeProfile.r
@@ -17,7 +17,7 @@ e832f33a6170037205ae086b27a7af1a *R/DearBeggMonotonePvalSelection.r
 eafd17e00a998efe4f3e47ce878471c3 *R/effectBias.r
 fd9584c92bacfab5475384fb89df2c8d *R/normalizeT.r
 fd1caa55212adac3632d2623a8a5f0da *R/pPool.r
-88ac2e4bf25e02be07d0905e47871ee2 *R/pPval.r
+882399ac751268eb2661da4b81ef605b *R/pPval.r
 655807482fc1aee0b22688106f66de43 *R/qPval.r
 55a458c0d087cf9c7f99d8af5d8d5c09 *R/rPval.r
 70f94e5421aad6a200c00126a7d09c3d *R/weightLine.r
@@ -32,5 +32,5 @@ d1a16a35725126360c7edcd8d738f699 *man/education.Rd
 6612122ff328288d81b89c619fa59e54 *man/effectBias.Rd
 9635259125cf6aa4ed4104e7cbbbcbf7 *man/pPool.Rd
 e6ee7fa5c5630daeb54f2e2751d5cc86 *man/passive_smoking.Rd
-5add87b53c460fd9a8d8f0d31bebc612 *man/selectMeta-package.Rd
+9fe45f12ce6d0553f9cbf34ecf405354 *man/selectMeta-package.Rd
 27d56d60f6c15580490bb9748d3a0199 *man/weightLine.Rd
