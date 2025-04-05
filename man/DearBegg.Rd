@@ -44,7 +44,7 @@ DearBeggToMinimize(vec, y, u, lam)
 \item{y}{Effect sizes, ordered in decreasing order of \eqn{p}-values.}
 \item{u}{Standard errors, ordered in decreasing order of \eqn{p}-values.}
 \item{loglik}{Value of the log-likelihood at the maximum.}
-\item{DEoptim.res}{Only available in \code{\link{DearBeggMonotone}}. Provides the object that is outputted by \code{\link{DEoptim}}.}
+\item{DEoptim.res}{Only available in \code{\link{DearBeggMonotone}}. Provides the object that is outputted by \code{\link[DEoptim]{DEoptim}}.}
 }
 \references{
 Ardia, D., Boudt, K., Carl, P., Mullen, K.M., Peterson, B.G. (2010).

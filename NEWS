@@ -1,3 +1,7 @@
+selectMeta_1.0.9:
+---------------------------------
+- Modernize cross-referencing.
+
 selectMeta_1.0.8:
 ---------------------------------
 - Properly import globals.

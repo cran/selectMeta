@@ -1,6 +1,6 @@
-cd623958d8e7ea717c2e62dde0704a08 *DESCRIPTION
+80b94539b761b5e96602897156ed7e07 *DESCRIPTION
 66c3ce7421e2dc38d947f871ad9c7623 *NAMESPACE
-e576d63114441222d5f28c2d9239229d *NEWS
+f1b6ec750675c2730c52a210234457b8 *NEWS
 be9ec243b20ce88934577a6131244c47 *R/DearBegg.r
 5ae49ff5aedf3a75d1225835c3adaaf5 *R/DearBeggLoglik.r
 53c2cd82572e9a1c2f50fc1cd51d4226 *R/DearBeggMonotone.r
@@ -17,13 +17,13 @@ c23539bc7077d715a9845b5a29d83c36 *R/DearBeggMonotoneCItheta.r
 eafd17e00a998efe4f3e47ce878471c3 *R/effectBias.r
 fd9584c92bacfab5475384fb89df2c8d *R/normalizeT.r
 fd1caa55212adac3632d2623a8a5f0da *R/pPool.r
-882399ac751268eb2661da4b81ef605b *R/pPval.r
+6cebe70e2fe9cf284d371d5a6e3cfe18 *R/pPval.r
 655807482fc1aee0b22688106f66de43 *R/qPval.r
 55a458c0d087cf9c7f99d8af5d8d5c09 *R/rPval.r
 70f94e5421aad6a200c00126a7d09c3d *R/weightLine.r
-049caf517589cca29dc7caf48ef1d278 *data/education.rda
-87ab758fb5c78b887b3eb8f2601b6323 *data/passive_smoking.rda
-5d6ef09a8c042b6cc2096ac6e8256e48 *man/DearBegg.Rd
+3df2a3a52e60fd4bfc71caf7e7cfba16 *data/education.rda
+5aafe5d0f776312b04205ca8853235e9 *data/passive_smoking.rda
+81e390aadcd8047413cb7942f2012a36 *man/DearBegg.Rd
 f653eb4c573ad893cbf1f99adf0c4b03 *man/DearBeggMonotoneCItheta.Rd
 060ac34907f2440efa7fc92ca0e76476 *man/DearBeggMonotonePvalSelection.Rd
 33e8ae4c69672240a3146aa03099f2bc *man/IyenGreen.Rd
@@ -32,5 +32,5 @@ d1a16a35725126360c7edcd8d738f699 *man/education.Rd
 6612122ff328288d81b89c619fa59e54 *man/effectBias.Rd
 9635259125cf6aa4ed4104e7cbbbcbf7 *man/pPool.Rd
 e6ee7fa5c5630daeb54f2e2751d5cc86 *man/passive_smoking.Rd
-9fe45f12ce6d0553f9cbf34ecf405354 *man/selectMeta-package.Rd
+0deaaa62d30811dd880fc01cf31b2393 *man/selectMeta-package.Rd
 27d56d60f6c15580490bb9748d3a0199 *man/weightLine.Rd
